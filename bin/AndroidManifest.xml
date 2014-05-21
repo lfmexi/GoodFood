@@ -78,6 +78,14 @@
             android:name="com.example.goodfood.Perfil"
             android:label="@string/title_activity_perfil" >
         </activity>
+        <activity
+            android:name="com.example.goodfood.VisualizaReceta"
+            android:label="@string/title_activity_visualiza_receta" >
+        </activity>
+        <activity
+            android:name="com.example.goodfood.ComentarioReceta"
+            android:label="@string/title_activity_comentario_receta" >
+        </activity>
     </application>
 
 </manifest>

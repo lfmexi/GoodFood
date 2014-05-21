@@ -9,7 +9,7 @@
     tools:context=".BuscaReceta" >
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/textoComentario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -24,7 +24,7 @@
         android:id="@+id/botonBuscarReceta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignBottom="@+id/textoComentario"
         android:layout_alignParentRight="true"
         android:text="Buscar" />
 
@@ -32,8 +32,8 @@
         android:id="@+id/listaResultados"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText1" >
+        android:layout_alignLeft="@+id/textoComentario"
+        android:layout_below="@+id/textoComentario" >
     </ListView>
 
 </RelativeLayout>

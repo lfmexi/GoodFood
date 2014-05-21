@@ -21,5 +21,6 @@
     <string name="title_activity_ejercicios">Ejercicios Recomendados</string>
     <string name="title_activity_perfil">Perfil</string>
     <string name="title_activity_visualiza_receta">Receta</string>
+    <string name="title_activity_comentario_receta">Comenta la receta</string>
 
 </resources>

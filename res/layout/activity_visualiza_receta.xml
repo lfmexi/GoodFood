@@ -18,14 +18,6 @@
         android:text="Large Text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-	<Button
-	    android:id="@+id/button1"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_below="@+id/ratingBar1"
-	    android:layout_centerHorizontal="true"
-	    android:text="Mostrar Descripción" />
-
 	<RatingBar
 	    android:id="@+id/ratingBar1"
 	    android:layout_width="wrap_content"
@@ -41,12 +33,32 @@
 	    android:layout_centerHorizontal="true"
 	    android:src="@drawable/ic_launcher" />
 
+	<Button
+	    android:id="@+id/botonMostrarDescrpicion"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/ratingBar1"
+	    android:layout_below="@+id/ratingBar1"
+	    android:text="Mostrar Descripción" />
+
+	<Button
+	    android:id="@+id/botonComentar"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/botonMostrarDescrpicion"
+	    android:layout_alignBottom="@+id/botonMostrarDescrpicion"
+	    android:layout_toRightOf="@+id/botonMostrarDescrpicion"
+	    android:text="Comentar" />
+
 	<ListView
 	    android:id="@+id/listView1"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:layout_alignLeft="@+id/ratingBar1"
-	    android:layout_below="@+id/button1" >
+	    android:layout_alignLeft="@+id/botonMostrarDescrpicion"
+	    android:layout_below="@+id/botonMostrarDescrpicion"
+	    android:layout_marginTop="20dp" >
 	</ListView>
     
 </RelativeLayout>
