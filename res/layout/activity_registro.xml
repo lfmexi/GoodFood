@@ -37,7 +37,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
             <EditText
-                android:id="@+id/editText1"
+                android:id="@+id/textCorreo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -53,10 +53,11 @@
                 android:text="*Nombre" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/textNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10" />
+                android:ems="10"
+                android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -65,10 +66,11 @@
                 android:text="*Apellido(s)" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/textApellido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10" />
+                android:ems="10"
+                android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -77,7 +79,7 @@
                 android:text="*Contraseña" />
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/textPassReg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -90,7 +92,7 @@
                 android:text="*Confirmar Contraseña" />
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/textConfirmPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"

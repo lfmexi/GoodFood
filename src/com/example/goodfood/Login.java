@@ -17,6 +17,15 @@ public class Login extends Activity {
 		
 		Button registrar=(Button)this.findViewById(R.id.botonRegistro);
 		Button recuperar=(Button)this.findViewById(R.id.botonRec);
+		Button login=(Button)this.findViewById(R.id.botonLogin);
+		
+		login.setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				loginOnClick();
+			}
+		});
 		
 		registrar.setOnClickListener(new OnClickListener(){
 			@Override
@@ -35,6 +44,11 @@ public class Login extends Activity {
 		});
 	}
 
+	private void loginOnClick(){
+		//Acciones de validación del usuario
+		this.startActivity(new Intent(this,MenuPrincipal.class));
+		this.finish();
+	}
 	private void RegistrarOnClick(){
 		Intent i=new Intent(this,Registro.class);
 		this.startActivity(i);

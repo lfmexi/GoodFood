@@ -30,7 +30,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/textCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView2"
@@ -43,7 +43,7 @@
         android:id="@+id/botonRecuperacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText1"
+        android:layout_below="@+id/textCorreo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="44dp"
         android:text="Recuperar" />

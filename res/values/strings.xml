@@ -7,5 +7,18 @@
     <string name="title_activity_login">Login</string>
     <string name="title_activity_registro">Registro</string>
     <string name="title_activity_recupera">Recupera</string>
+    <string name="title_activity_completa_perfil">Completa tu perfil</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_menu">Menu Principal</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_menu_principal">Menu Principal</string>
+    <string name="title_activity_crea_receta">Crear Receta</string>
+    <string name="title_activity_busca_receta">Buscar Recetas</string>
+    <string name="title_activity_recetas">Mis Recetas</string>
+    <string name="title_activity_ejercicios">Ejercicios Recomendados</string>
+    <string name="title_activity_perfil">Perfil</string>
 
 </resources>

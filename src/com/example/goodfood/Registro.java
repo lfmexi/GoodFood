@@ -2,6 +2,7 @@ package com.example.goodfood;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -21,7 +22,7 @@ public class Registro extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				
+				registrar();
 			}
 		});
 		
@@ -34,6 +35,12 @@ public class Registro extends Activity {
 		});
 	}
 
+	private void registrar(){
+		Intent i=new Intent(this,CompletaPerfil.class);
+		this.startActivity(i);
+		this.finish();
+	}
+	
 	private void cancelar(){
 		this.finish();
 	}

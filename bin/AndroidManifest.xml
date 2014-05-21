@@ -34,6 +34,50 @@
             android:name="com.example.goodfood.Recupera"
             android:label="@string/title_activity_recupera" >
         </activity>
+        <activity
+            android:name="com.example.goodfood.CompletaPerfil"
+            android:label="@string/title_activity_completa_perfil" >
+        </activity>
+        <activity
+            android:name="com.example.goodfood.ItemListActivity"
+            android:label="@string/title_item_list" >
+        </activity>
+        <activity
+            android:name="com.example.goodfood.ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName=".ItemListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ItemListActivity" />
+        </activity>
+        <activity
+            android:name="com.example.goodfood.Menu"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name="com.example.goodfood.MenuPrincipal"
+            android:label="@string/title_activity_menu_principal" >
+        </activity>
+        <activity
+            android:name="com.example.goodfood.CreaReceta"
+            android:label="@string/title_activity_crea_receta" >
+        </activity>
+        <activity
+            android:name="com.example.goodfood.BuscaReceta"
+            android:label="@string/title_activity_busca_receta" >
+        </activity>
+        <activity
+            android:name="com.example.goodfood.Recetas"
+            android:label="@string/title_activity_recetas" >
+        </activity>
+        <activity
+            android:name="com.example.goodfood.Ejercicios"
+            android:label="@string/title_activity_ejercicios" >
+        </activity>
+        <activity
+            android:name="com.example.goodfood.Perfil"
+            android:label="@string/title_activity_perfil" >
+        </activity>
     </application>
 
 </manifest>
