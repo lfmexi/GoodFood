@@ -2,6 +2,8 @@ package com.example.goodfood;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
@@ -20,6 +22,9 @@ public class VisualizaReceta extends Activity {
 		nombreReceta=(TextView)this.findViewById(R.id.labelNombreReceta);
 		barra=(RatingBar)this.findViewById(R.id.ratingBar1);
 		botonComenta=(Button)this.findViewById(R.id.botonComentar);
+		
+		
+		barra.setRating(ratingInicial);
 		
 		barra.setOnRatingBarChangeListener(new OnRatingBarChangeListener(){
 			@Override
@@ -43,7 +48,31 @@ public class VisualizaReceta extends Activity {
 		this.startActivity(new Intent(this,ComentarioReceta.class));
 	}
 
-	private void barraOnRatingBarChange(float valorNuevo){
+	private void rate(float val){
+		//se realiza la accion de rate
+		ratingInicial=val;
+	}
+	
+	private void barraOnRatingBarChange(final float valorNuevo){
+		DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+		    @Override
+		    public void onClick(DialogInterface dialog, int which) {
+		        switch (which){
+		        case DialogInterface.BUTTON_POSITIVE:
+		            rate(valorNuevo);
+		            break;
+
+		        case DialogInterface.BUTTON_NEGATIVE:
+		            barra.setRating(ratingInicial);
+		            break;
+		        }
+		    }
+		};
+
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setMessage("¿Desea calificar la aplicación?").setPositiveButton("Yes", dialogClickListener)
+		    .setNegativeButton("No", dialogClickListener).show();
+		
 		
 	}
 	@Override
@@ -56,4 +85,5 @@ public class VisualizaReceta extends Activity {
 	private TextView nombreReceta;
 	private RatingBar barra;
 	private Button botonComenta;
+	private float ratingInicial=0;
 }
