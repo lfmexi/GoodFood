@@ -20,8 +20,18 @@ public class CreaReceta extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_crea_receta);
+		
+		Button boton=(Button)this.findViewById(R.id.botonSeleccionaImagen);
+		
 		imagen=(ImageView)this.findViewById(R.id.imageView1);
 		
+		boton.setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				seleccionarOnClick();
+			}
+		});
 		imagen.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {

@@ -20,7 +20,7 @@ public class MenuPrincipal extends Activity {
 		String listado[]=new String[]{
 				"Ingresar nueva receta","Buscar recetas","Mis recetas","Ejercicios recomendados","Perfil"
 		};
-		lista=(ListView)this.findViewById(R.id.listView1);
+		lista=(ListView)this.findViewById(R.id.listaResultados);
 		lista.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,listado));
 		
 		lista.setOnItemClickListener(new OnItemClickListener(){

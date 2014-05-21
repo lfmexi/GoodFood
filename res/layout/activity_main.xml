@@ -17,7 +17,7 @@
         android:text="Su salud es importante" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/labelNombreReceta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView2"

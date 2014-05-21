@@ -9,7 +9,7 @@
     tools:context=".CompletaPerfil" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/labelNombreReceta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -22,10 +22,10 @@
         android:id="@+id/scrollView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignLeft="@+id/labelNombreReceta"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/textView1"
-        android:layout_below="@+id/textView1" >
+        android:layout_alignRight="@+id/labelNombreReceta"
+        android:layout_below="@+id/labelNombreReceta" >
 
         <LinearLayout
             android:layout_width="match_parent"

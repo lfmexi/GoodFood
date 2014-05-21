@@ -9,7 +9,7 @@
     tools:context=".Login" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/labelNombreReceta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -22,8 +22,8 @@
         android:id="@+id/textUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/labelNombreReceta"
+        android:layout_below="@+id/labelNombreReceta"
         android:layout_marginTop="18dp"
         android:ems="10"
         android:inputType="text|textEmailAddress" >
@@ -45,7 +45,7 @@
         android:id="@+id/botonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView1"
+        android:layout_alignRight="@+id/labelNombreReceta"
         android:layout_below="@+id/textPasswd"
         android:layout_marginRight="52dp"
         android:layout_marginTop="16dp"
