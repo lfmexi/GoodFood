@@ -22,7 +22,8 @@ public class VisualizaReceta extends Activity {
 		nombreReceta=(TextView)this.findViewById(R.id.labelNombreReceta);
 		barra=(RatingBar)this.findViewById(R.id.ratingBar1);
 		botonComenta=(Button)this.findViewById(R.id.botonComentar);
-		
+		botonAgrega=(Button)this.findViewById(R.id.botonAgregarReceta);
+		botonMostrar=(Button)this.findViewById(R.id.botonMostrarDescrpicion);
 		
 		barra.setRating(ratingInicial);
 		
@@ -42,6 +43,43 @@ public class VisualizaReceta extends Activity {
 			}
 		});
 		
+		botonMostrar.setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				botonMostrarOnClick();
+			}
+		});
+		
+		botonAgrega.setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				botonAgregaOnClick();
+			}
+		});
+	}
+	
+	private void botonAgregaOnClick(){
+		DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+		    @Override
+		    public void onClick(DialogInterface dialog, int which) {
+		        switch (which){
+		        case DialogInterface.BUTTON_POSITIVE:
+		            //agregar la receta a la cuenta del usuario
+		        	break;
+		        }
+		    }
+		};
+
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setMessage("¿Desea agregar ésta receta a sus recetas favoritas?").setPositiveButton("Yes", dialogClickListener)
+		    .setNegativeButton("No", dialogClickListener).show();
+		
+	}
+	
+	private void botonMostrarOnClick(){
+		this.startActivity(new Intent(this,DetalleReceta.class));
 	}
 	
 	private void botonComentaOnClick(){
@@ -85,5 +123,7 @@ public class VisualizaReceta extends Activity {
 	private TextView nombreReceta;
 	private RatingBar barra;
 	private Button botonComenta;
+	private Button botonAgrega;
+	private Button botonMostrar;
 	private float ratingInicial=0;
 }

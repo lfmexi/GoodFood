@@ -8,30 +8,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".VisualizaReceta" >
 
-    <TextView
-        android:id="@+id/labelNombreReceta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="Large Text"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
 	<RatingBar
 	    android:id="@+id/ratingBar1"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:layout_below="@+id/imageView1"
 	    android:layout_centerHorizontal="true" />
-
-	<ImageView
-	    android:id="@+id/imageView1"
-	    android:layout_width="140dp"
-	    android:layout_height="140dp"
-	    android:layout_below="@+id/labelNombreReceta"
-	    android:layout_centerHorizontal="true"
-	    android:src="@drawable/ic_launcher" />
 
 	<Button
 	    android:id="@+id/botonMostrarDescrpicion"
@@ -60,5 +42,33 @@
 	    android:layout_below="@+id/botonMostrarDescrpicion"
 	    android:layout_marginTop="20dp" >
 	</ListView>
+
+	<ImageView
+	    android:id="@+id/imageView1"
+	    android:layout_width="140dp"
+	    android:layout_height="140dp"
+	    android:layout_alignLeft="@+id/ratingBar1"
+	    android:layout_below="@+id/labelNombreReceta"
+	    android:src="@drawable/ic_launcher" />
+
+	<TextView
+	    android:id="@+id/labelNombreReceta"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/imageView1"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="18dp"
+	    android:text="Large Text"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<Button
+	    android:id="@+id/botonAgregarReceta"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/labelNombreReceta"
+	    android:layout_alignBottom="@+id/labelNombreReceta"
+	    android:layout_toRightOf="@+id/imageView1"
+	    android:text="Argegar receta" />
     
 </RelativeLayout>

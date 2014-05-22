@@ -86,6 +86,14 @@
             android:name="com.example.goodfood.ComentarioReceta"
             android:label="@string/title_activity_comentario_receta" >
         </activity>
+        <activity
+            android:name="com.example.goodfood.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.example.goodfood.DetalleReceta"
+            android:label="@string/title_activity_detalle_receta" >
+        </activity>
     </application>
 
 </manifest>
