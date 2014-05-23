@@ -41,7 +41,10 @@ public class MenuPrincipal extends Activity {
 	private void listaOnClick(View view){
 		String nombreMenu=((TextView) view).getText().toString();
 		if(nombreMenu.equals("Ingresar nueva receta")){
-			this.startActivity(new Intent(this,CreaReceta.class));
+			String[]info=cadena.split(",");
+			Intent i=new Intent(this,CreaReceta.class);
+			i.putExtra("idUser", info[0]);
+			this.startActivity(i);
 		}else if(nombreMenu.equals("Buscar recetas")){
 			this.startActivity(new Intent(this,BuscaReceta.class));
 		}else if(nombreMenu.equals("Mis recetas")){

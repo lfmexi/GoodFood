@@ -10,12 +10,16 @@ import android.widget.Button;
 
 public class CompletaPerfil extends Activity {
 
+	private String datos=null;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_completa_perfil);
 		Button actualiza=(Button)this.findViewById(R.id.botonActualizarPerfil);
 		Button ahoraNo=(Button)this.findViewById(R.id.botonNotNow);
+		
+		Intent intent=this.getIntent();
+		datos=intent.getExtras().getString("valueString");
 		
 		actualiza.setOnClickListener(new OnClickListener(){
 			@Override
@@ -37,6 +41,7 @@ public class CompletaPerfil extends Activity {
 	private void actualizarOnClick(){
 		//acciones para actualizar el perfil
 		Intent i=new Intent(this,MenuPrincipal.class);
+		i.putExtra("valueString", datos);
 		this.startActivity(i);
 		this.finish();
 	}
@@ -44,6 +49,7 @@ public class CompletaPerfil extends Activity {
 	private void ahoraNoOnClick(){
 		//solo se salta éste paso
 		Intent i=new Intent(this,MenuPrincipal.class);
+		i.putExtra("valueString", datos);
 		this.startActivity(i);
 		this.finish();
 	}
