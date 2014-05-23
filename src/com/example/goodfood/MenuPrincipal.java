@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 public class MenuPrincipal extends Activity {
 
+	private String cadena=null;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -20,6 +21,10 @@ public class MenuPrincipal extends Activity {
 		String listado[]=new String[]{
 				"Ingresar nueva receta","Buscar recetas","Mis recetas","Ejercicios recomendados","Perfil"
 		};
+		
+		Intent i=this.getIntent();
+		cadena=i.getExtras().getString("valueString");
+		
 		lista=(ListView)this.findViewById(R.id.listaResultados);
 		lista.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,listado));
 		

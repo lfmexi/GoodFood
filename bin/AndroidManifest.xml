@@ -99,5 +99,5 @@
             android:label="@string/title_activity_detalle_ejercicio" >
         </activity>
     </application>
-
+	<uses-permission android:name="android.permission.INTERNET" /> 
 </manifest>
