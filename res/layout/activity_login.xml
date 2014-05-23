@@ -8,68 +8,65 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Login" >
 
-    <TextView
-        android:id="@+id/labelNombreReceta"
+    <ScrollView
+        android:id="@+id/scrollView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:text="Ingrese como usuario registrado"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
 
-    <EditText
-        android:id="@+id/textUsername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/labelNombreReceta"
-        android:layout_below="@+id/labelNombreReceta"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:inputType="text|textEmailAddress" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="302dp"
+            android:orientation="vertical" >
 
-        <requestFocus />
-    </EditText>
+            <TextView
+                android:id="@+id/labelNombreReceta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrese como usuario registrado"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <EditText
-        android:id="@+id/textPasswd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textUsername"
-        android:layout_below="@+id/textUsername"
-        android:layout_marginTop="15dp"
-        android:ems="10"
-        android:inputType="textPassword" />
+            <EditText
+                android:id="@+id/textUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text|textEmailAddress" />
 
-    <Button
-        android:id="@+id/botonLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/labelNombreReceta"
-        android:layout_below="@+id/textPasswd"
-        android:layout_marginRight="52dp"
-        android:layout_marginTop="16dp"
-        android:text="Login" />
+            <EditText
+                android:id="@+id/textPasswd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" >
 
-    <Button
-        android:id="@+id/botonRec"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/botonLogin"
-        android:layout_alignBottom="@+id/botonLogin"
-        android:layout_alignLeft="@+id/textPasswd"
-        android:layout_marginLeft="16dp"
-        android:text="Olvidé mi clave" />
+                <requestFocus />
+            </EditText>
 
-    <Button
-        android:id="@+id/botonRegistro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/botonRec"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="54dp"
-        android:text="Soy nuevo, Regístrame" />
-    
+            <Button
+                android:id="@+id/botonLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="126dp"
+                android:text="Login" />
+
+            <Button
+                android:id="@+id/botonRec"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="21dp"
+                android:text="Olvidé mi clave" />
+
+            <Button
+                android:id="@+id/botonRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soy nuevo, Regístrame" />
+        </LinearLayout>
+
+    </ScrollView>
 
 </RelativeLayout>

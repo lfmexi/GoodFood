@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Recetas" >
+    tools:context=".DetalleEjercicio" >
 
     <ScrollView
         android:id="@+id/scrollView1"
@@ -22,31 +22,30 @@
             android:layout_height="match_parent"
             android:orientation="vertical" >
 
-            <TextView
-                android:id="@+id/textoEjercicio"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mis recetas publicadas"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            <ListView
-                android:id="@+id/listaPublicadas"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
-            </ListView>
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mis recetas favoritas"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                <ImageView
+                    android:id="@+id/imageEjercicio"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/ic_launcher" />
 
-            <ListView
-                android:id="@+id/listaFavoritas"
+                <TextView
+                    android:id="@+id/textoEjercicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre del Ejercicio"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/textoDescripcionEjercicio"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-            </ListView>
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine" />
 
         </LinearLayout>
     </ScrollView>

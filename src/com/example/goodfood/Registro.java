@@ -1,12 +1,17 @@
 package com.example.goodfood;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 
 public class Registro extends Activity {
 
@@ -15,8 +20,20 @@ public class Registro extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_registro);
 		
+		spinner=(Spinner)this.findViewById(R.id.spinnerSexo);
 		Button registrar=(Button)this.findViewById(R.id.buttonRegistrar);
 		Button cancel=(Button)this.findViewById(R.id.buttonCancelar);
+		
+		List<String> list = new ArrayList<String>();
+        list.add("Hombre");
+        list.add("Mujer");
+         
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>
+                     (this, android.R.layout.simple_spinner_item,list);
+                      
+        dataAdapter.setDropDownViewResource
+                     (android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(dataAdapter);
 		
 		registrar.setOnClickListener(new OnClickListener(){
 			@Override
@@ -51,4 +68,5 @@ public class Registro extends Activity {
 		return true;
 	}
 
+	private Spinner spinner;
 }

@@ -12,7 +12,7 @@
 	    android:id="@+id/ratingBar1"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	    android:layout_below="@+id/imageView1"
+	    android:layout_below="@+id/imagenUsuario"
 	    android:layout_centerHorizontal="true" />
 
 	<Button
@@ -35,7 +35,7 @@
 	    android:text="Comentar" />
 
 	<ListView
-	    android:id="@+id/listView1"
+	    android:id="@+id/listaPublicadas"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:layout_alignLeft="@+id/botonMostrarDescrpicion"
@@ -44,7 +44,7 @@
 	</ListView>
 
 	<ImageView
-	    android:id="@+id/imageView1"
+	    android:id="@+id/imagenUsuario"
 	    android:layout_width="140dp"
 	    android:layout_height="140dp"
 	    android:layout_alignLeft="@+id/ratingBar1"
@@ -55,7 +55,7 @@
 	    android:id="@+id/labelNombreReceta"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	    android:layout_alignLeft="@+id/imageView1"
+	    android:layout_alignLeft="@+id/imagenUsuario"
 	    android:layout_alignParentTop="true"
 	    android:layout_marginTop="18dp"
 	    android:text="Large Text"
@@ -68,7 +68,7 @@
 	    android:layout_height="wrap_content"
 	    android:layout_alignBaseline="@+id/labelNombreReceta"
 	    android:layout_alignBottom="@+id/labelNombreReceta"
-	    android:layout_toRightOf="@+id/imageView1"
+	    android:layout_toRightOf="@+id/imagenUsuario"
 	    android:text="Argegar receta" />
     
 </RelativeLayout>

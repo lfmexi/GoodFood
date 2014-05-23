@@ -23,7 +23,7 @@ public class CreaReceta extends Activity {
 		
 		Button boton=(Button)this.findViewById(R.id.botonSeleccionaImagen);
 		
-		imagen=(ImageView)this.findViewById(R.id.imageView1);
+		imagen=(ImageView)this.findViewById(R.id.imagenUsuario);
 		
 		boton.setOnClickListener(new OnClickListener(){
 			@Override

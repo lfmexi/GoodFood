@@ -9,7 +9,7 @@
     tools:context=".CreaReceta" >
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/imagenUsuario"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentLeft="true"
@@ -22,10 +22,10 @@
         android:id="@+id/scrollView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignLeft="@+id/imagenUsuario"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/imageView1"
+        android:layout_below="@+id/imagenUsuario"
         android:layout_marginTop="18dp" >
 
         <LinearLayout
@@ -100,10 +100,10 @@
         android:id="@+id/botonSeleccionaImagen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignBottom="@+id/imagenUsuario"
         android:layout_marginBottom="22dp"
         android:layout_marginLeft="24dp"
-        android:layout_toRightOf="@+id/imageView1"
+        android:layout_toRightOf="@+id/imagenUsuario"
         android:text="Seleccionar Imagen" />
 
 </RelativeLayout>

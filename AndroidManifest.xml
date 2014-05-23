@@ -94,6 +94,10 @@
             android:name="com.example.goodfood.DetalleReceta"
             android:label="@string/title_activity_detalle_receta" >
         </activity>
+        <activity
+            android:name="com.example.goodfood.DetalleEjercicio"
+            android:label="@string/title_activity_detalle_ejercicio" >
+        </activity>
     </application>
 
 </manifest>
