@@ -48,9 +48,9 @@ public final class R {
         public static final int labelNombreReceta=0x7f080006;
         public static final int labelNombreRecetaComentario=0x7f080003;
         public static final int labelReceta=0x7f080019;
+        public static final int listaComentarios=0x7f080030;
         public static final int listaEjercicios=0x7f08001d;
         public static final int listaFavoritas=0x7f080031;
-        public static final int listaPublicadas=0x7f080030;
         public static final int listaResultados=0x7f080002;
         public static final int ratingBar1=0x7f08003b;
         public static final int scrollView1=0x7f080004;

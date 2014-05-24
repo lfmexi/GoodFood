@@ -86,12 +86,12 @@ public class Registro extends Activity {
 	private void registrar(){
 		if(this.campoApellido.getText()!=null && this.campoConfirm.getText()!=null && this.campoCorreo.getText()!=null
 				&& this.campoNombre.getText()!=null && this.campoPass.getText()!=null &&this.campoUsername.getText()!=null){
-			String apellido=campoApellido.getText().toString();
-			String confirm=campoConfirm.getText().toString();
-			String correo=campoCorreo.getText().toString();
-			String nombre=campoNombre.getText().toString();
-			String pass=campoPass.getText().toString();
-			String user=campoUsername.getText().toString();
+			String apellido=campoApellido.getText().toString().replace(" ", "%20");
+			String confirm=campoConfirm.getText().toString().replace(" ", "%20");
+			String correo=campoCorreo.getText().toString().replace(" ", "%20");
+			String nombre=campoNombre.getText().toString().replace(" ", "%20");
+			String pass=campoPass.getText().toString().replace(" ", "%20");
+			String user=campoUsername.getText().toString().replace(" ", "%20");
 			
 			if(confirm.equals(pass)){
 				TareaRegistra tr=new TareaRegistra(this);

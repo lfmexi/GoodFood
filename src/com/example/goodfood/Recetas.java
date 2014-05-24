@@ -16,7 +16,7 @@ public class Recetas extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_recetas);
 		
-		listaPublicadas=(ListView)this.findViewById(R.id.listaPublicadas);
+		listaPublicadas=(ListView)this.findViewById(R.id.listaComentarios);
 		listaFavoritas=(ListView)this.findViewById(R.id.listaFavoritas);
 		
 		listaPublicadas.setOnItemClickListener(new OnItemClickListener(){

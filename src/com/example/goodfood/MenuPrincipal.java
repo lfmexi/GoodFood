@@ -46,7 +46,10 @@ public class MenuPrincipal extends Activity {
 			i.putExtra("idUser", info[0]);
 			this.startActivity(i);
 		}else if(nombreMenu.equals("Buscar recetas")){
-			this.startActivity(new Intent(this,BuscaReceta.class));
+			String[]info=cadena.split(",");
+			Intent i=new Intent(this,BuscaReceta.class);
+			i.putExtra("idUser", info[0]);
+			this.startActivity(i);
 		}else if(nombreMenu.equals("Mis recetas")){
 			this.startActivity(new Intent(this,Recetas.class));
 		}else if(nombreMenu.equals("Ejercicios recomendados")){

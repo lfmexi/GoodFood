@@ -102,13 +102,12 @@ public class CreaReceta extends Activity {
 	private void boton2OnClick(){
 		if(this.textoNombre.getText()!=null && this.textoIngredientes.getText()!=null && this.textoInstrucciones.getText()!=null
 				&& this.textoInfo.getText()!=null && this.idUser!=null){
-			String nombre=textoNombre.getText().toString();
-			String ingredientes=textoIngredientes.getText().toString();
-			String instrucciones=textoInstrucciones.getText().toString();
-			String info=textoInfo.getText().toString();
+			String nombre=textoNombre.getText().toString().replace(" ", "%20");
+			String ingredientes=textoIngredientes.getText().toString().replace(" ", "%20");
+			String instrucciones=textoInstrucciones.getText().toString().replace(" ", "%20");
+			String info=textoInfo.getText().toString().replace(" ", "%20");
 			RegistraReceta tr=new RegistraReceta(this);
 			tr.execute(idUser,nombre,ingredientes,instrucciones,info);
-			
 		}
 	}
 	
@@ -194,8 +193,7 @@ public class CreaReceta extends Activity {
 		
 		protected void onPostExecute(String result){
 			if(respuesta!=null){
-				Intent intent=new Intent(padre,CompletaPerfil.class);
-				intent.putExtra("valueString", respuesta);
+				padre.finish();
 				//parent.startActivity(intent);
 				//parent.finish();
 			}
